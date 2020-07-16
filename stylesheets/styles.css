@@ -143,3 +143,70 @@ article {
     transition: opacity 0.2s; }
     article button:hover {
       opacity: 0.6; }
+
+#register-side-bar {
+  width: 200%;
+  display: flex;
+  position: absolute;
+  transition: all 0.6s 0.6s;
+  transform: translateX(200px); }
+  #register-side-bar #empty-section {
+    width: 94%;
+    height: 100vh; }
+  #register-side-bar #visible-section {
+    width: 6%;
+    height: 100vh;
+    background-color: rgba(227, 227, 227, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #3B3B3B;
+    font-size: 1.125rem;
+    transition: opacity 1.4s; }
+    #register-side-bar #visible-section span {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      margin: 8vh 0;
+      transition: opacity 0.6s; }
+      #register-side-bar #visible-section span i {
+        font-size: 1.5rem;
+        margin-bottom: 0.875rem; }
+    #register-side-bar #visible-section h4 {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: opacity 0.6s; }
+  #register-side-bar #form-section {
+    background-color: rgba(227, 227, 227, 0.08);
+    height: 100vh;
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    padding-top: 30vh; }
+    #register-side-bar #form-section h2 {
+      font-size: 1.875rem;
+      margin-bottom: 3.25rem; }
+  #register-side-bar input:not([type="submit"]) {
+    display: block;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    margin: 3.125rem 0;
+    padding: 6px 18px; }
+  #register-side-bar input[type="submit"] {
+    background-color: white;
+    color: #292929;
+    padding: 0.4em 5.4em;
+    border-radius: 4px;
+    margin-left: 8px;
+    margin-bottom: 4.125rem;
+    transition: all 0.3s; }
+    #register-side-bar input[type="submit"]:hover {
+      opacity: 0.8s;
+      transform: scale(1.1); }
+  #register-side-bar ::placeholder {
+    color: inherit; }
+  #register-side-bar a {
+    color: #B29DFF; }
+    #register-side-bar a:hover {
+      opacity: 0.7; }
