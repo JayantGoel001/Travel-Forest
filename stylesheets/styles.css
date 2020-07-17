@@ -212,3 +212,42 @@ article {
     color: #B29DFF; }
     #register-side-bar a:hover {
       opacity: 0.7; }
+
+#info-section {
+  color: #CFCFCF;
+  margin: 5.125rem; }
+  #info-section article {
+    display: flex;
+    align-items: center;
+    margin: 2rem; }
+    #info-section article figure {
+      width: 48%;
+      height: 13.875rem;
+      background-size: cover;
+      background-position: center;
+      flex-shrink: 0;
+      transition: all 0.3s; }
+      #info-section article figure:hover {
+        transform: scale(1.08); }
+    #info-section article div {
+      margin-left: 6.25rem; }
+      #info-section article div h2 {
+        font-size: 1.875rem;
+        margin-bottom: 0.5rem; }
+      #info-section article div p {
+        font-size: 1rem;
+        width: 70%;
+        line-height: 220%; }
+  #info-section article:nth-of-type(1) figure {
+    background-image: url("../images/info-1.jpg"); }
+  #info-section article:nth-of-type(2) figure {
+    background-image: url("../images/info-2.jpg"); }
+  #info-section article:nth-of-type(3) figure {
+    background-image: url("../images/info-3.jpg"); }
+  #info-section article:nth-of-type(1) figure {
+    background-image: url("../images/info-1.jpg"); }
+  #info-section article:nth-of-type(2) figure {
+    background-image: url("../images/info-2.jpg"); }
+  #info-section article:nth-of-type(2) figure {
+    position: relative;
+    left: 60px; }
