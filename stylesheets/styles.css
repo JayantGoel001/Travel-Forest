@@ -251,3 +251,61 @@ article {
   #info-section article:nth-of-type(2) figure {
     position: relative;
     left: 60px; }
+
+#current-users {
+  width: 60%;
+  color: white;
+  margin: 12rem auto;
+  padding: 1.375rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.38);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38); }
+  #current-users h3, #current-users h4 {
+    text-align: center; }
+  #current-users h4 {
+    font-size: 2.25rem; }
+  #current-users h3 {
+    font-size: 4.5rem;
+    margin-top: 0.75rem; }
+
+#locations {
+  margin: 7.5rem 0;
+  text-align: center;
+  color: white; }
+  #locations h2 {
+    font-size: 2.25rem;
+    text-transform: uppercase; }
+  #locations #header-link {
+    font-size: 1.75rem;
+    display: block;
+    color: #8A8A8A;
+    text-decoration: underline;
+    margin: 0.5rem 0 1.375rem; }
+    #locations #header-link:hover {
+      opacity: 0.7; }
+  #locations input {
+    background-color: Transparent;
+    width: 18.75rem;
+    padding: 0 1.125rem 0.625rem;
+    display: block;
+    text-align: center;
+    margin: 4.5rem auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.38); }
+  #locations ::placeholder {
+    color: #D3D3D3; }
+  #locations h4 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  #locations ul {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1.125rem auto; }
+  #locations li {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.125rem;
+    list-style: none;
+    padding: 1.125rem 3.625rem; }
+    #locations li a {
+      cursor: pointer; }

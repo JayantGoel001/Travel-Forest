@@ -14,7 +14,7 @@ $("#visible-section").mouseenter(function(){openForm();});
 
 $("#empty-section").mouseenter(function(){closeForm();});
 
-$("#form-section").mouseleave(function(){closeForm();})
+$("#form-section").mouseleave(function(){closeForm();});
 
 function openForm(){
     $("#register-side-bar").css("transform","translate(-500px)");
@@ -32,3 +32,29 @@ function closeForm(){
     $("#call-num").css("opacity","1");
     $("#reg").css("opacity","1");
 };
+
+(function manageTotalUsers() {
+
+    let totalUsers = String(getRandom(140000,190000));
+    totalUsers = addComma(totalUsers);
+    addTotalUser(totalUsers);
+
+    function getRandom(min,max) {
+        return Math.floor(Math.random() * (max - min) + min);
+    }
+
+    function addComma(num) {
+        return num.slice(0,3) + "," + num.slice(3,6);
+    }
+    function addTotalUser(current_value) {
+        let num = Number(current_value.replace(",",""));
+        num++;
+        num = String(num);
+        num = addComma(num);
+
+        $("#total-users").html(num);
+        setTimeout(function() {
+            addTotalUser(num);
+        },getRandom(100,3000));
+    }
+})();
