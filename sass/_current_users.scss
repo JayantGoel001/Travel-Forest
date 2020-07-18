@@ -1,0 +1,19 @@
+#current-users{
+    width: 60%;
+    color: white;
+    margin: px-to-rem(192px) auto;
+    padding: px-to-rem(22px) 0;
+    border-top: 1px solid $faint-white;
+    border-bottom: 1px solid $faint-white;
+
+    h3,h4{
+        text-align: center;
+    }
+    h4{
+        font-size: px-to-rem(36px);
+    }
+    h3{
+        font-size: px-to-rem(72px);
+        margin-top: px-to-rem(12px);
+    }
+}

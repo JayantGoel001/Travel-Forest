@@ -333,7 +333,7 @@ p, a, button, input {
   #testimonials article {
     position: relative;
     z-index: 20;
-    padding: 11.25rem 0 4.75rem;
+    padding: 6.75rem 0 4.75rem;
     text-align: center; }
     #testimonials article h2 {
       text-transform: uppercase;
@@ -374,7 +374,10 @@ p, a, button, input {
           font-size: 1rem;
           margin-top: 0.875rem;
           text-align: left;
-          line-height: 240%; }
+          line-height: 240%;
+          transition: all 0.5s; }
+        #testimonials article #reviews .review:hover {
+          transform: scale(1.06); }
       #testimonials article #reviews .review:nth-of-type(1) figure {
         background-image: url("../images/face-1.jpg"); }
       #testimonials article #reviews .review:nth-of-type(2) figure {
@@ -390,3 +393,41 @@ p, a, button, input {
       margin-top: 0.5rem; }
       #testimonials article a:hover {
         opacity: 0.7; }
+
+#weekly-deals {
+  margin: 7.5rem 0;
+  color: white; }
+  #weekly-deals h2 {
+    background-color: rgba(13, 13, 13, 0.52);
+    font-size: 2.25rem;
+    width: max-content;
+    padding: 2.625rem;
+    padding-left: 21.25rem;
+    padding-right: 10rem;
+    margin-bottom: 0.625rem; }
+  #weekly-deals #deal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    #weekly-deals #deal #deal-details {
+      width: 30%;
+      padding-left: 11.25rem; }
+      #weekly-deals #deal #deal-details h3 {
+        font-size: 2.25rem; }
+      #weekly-deals #deal #deal-details p {
+        font-size: 1rem;
+        line-height: 180%;
+        margin: 1.25rem 0 2rem; }
+      #weekly-deals #deal #deal-details a {
+        text-decoration: underline; }
+        #weekly-deals #deal #deal-details a:hover {
+          opacity: 0.6; }
+    #weekly-deals #deal figure {
+      background-image: url("../images/greece.jpg");
+      background-size: cover;
+      height: 576px;
+      width: 44%;
+      box-shadow: -4px 4px 14px 3px rgba(80, 80, 80, 0.44);
+      transition: all 0.5s; }
+      #weekly-deals #deal figure:hover {
+        transform: scale(1.06); }

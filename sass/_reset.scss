@@ -1,0 +1,29 @@
+body,button,input{
+    font-family: 'Questrial',sans-serif;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p,figure{
+    font-weight: normal;
+    margin: 0;
+}
+button,input{
+    outline: none;
+    border: none;
+    color: inherit;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+p,a,button,input{
+    font-size: px-to-rem(18px);
+}

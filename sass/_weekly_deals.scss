@@ -1,0 +1,51 @@
+#weekly-deals{
+    margin: px-to-rem(120px) 0 ;
+    color: white;
+
+    h2{
+        background-color: rgba(13,13,13,.52);
+        font-size: px-to-rem(36px);
+        width: max-content;
+        padding: px-to-rem(42px);
+        padding-left: px-to-rem(340px);
+        padding-right: px-to-rem(160px);
+        margin-bottom: px-to-rem(10px);
+    }
+
+    #deal{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        #deal-details{
+            width: 30%;
+            padding-left: px-to-rem(180px);
+
+            h3{
+                font-size: px-to-rem(36px);
+            }
+            p{
+                font-size: px-to-rem(16px);
+                line-height: 180%;
+                margin: px-to-rem(20px) 0 px-to-rem(32px);
+            }
+            a{
+                text-decoration: underline;
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+        }
+
+        figure{
+            background-image: url(get-image("greece.jpg"));
+            background-size: cover;
+            height: 576px;
+            width: 44%;
+            box-shadow: -4px 4px 14px 3px rgba(80,80,80,.44);
+            transition: all 0.5s;
+            &:hover{
+                transform: scale(1.06);
+            }
+        }
+    }
+}

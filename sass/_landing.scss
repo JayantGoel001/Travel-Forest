@@ -1,0 +1,67 @@
+@keyframes intro-content{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes intro-header{
+    0%{
+        transform: translateY(40px) scale(0.6);
+    }
+    100%{
+        transform: translate(0) scale(1.0);
+    }
+}
+
+
+#bg{
+    background-image: url(get-image("bg.jpg"));
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+}
+
+#landing{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    position: relative;
+    z-index: 10;
+    transition: all 0.4s;
+    animation-name: intro-content;
+    animation-duration: 1.4s;
+    animation-delay: 0.1s;
+    animation-fill-mode: both;
+
+    h1{
+        font-size: px-to-rem(48px);
+        margin-bottom: px-to-rem(16px);
+        animation-name: intro-header;
+        animation-duration: 1s;
+        animation-delay: 0.1s;
+    }
+    p{
+        width: 36vw;
+        text-align: center;
+        line-height: 190%;
+    }
+    button{
+        color: #425831;
+        background-color: white;
+        padding: 0.6em 4.2em;
+        border-radius: 4px;
+        margin-top: px-to-rem(14px);
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}
