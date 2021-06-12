@@ -1,15 +1,15 @@
 # Travel Forest
 
-![](https://github.com/JayantGoel001/Travel-Forest/blob/master/screenshotsss1.png)
+![](https://github.com/JayantGoel001/Travel-Forest/blob/master/screenshots/sss1.png)
 
-![](https://github.com/JayantGoel001/Travel-Forest/blob/master/screenshotsss2.png)
+![](https://github.com/JayantGoel001/Travel-Forest/blob/master/screenshots/sss2.png)
 
-![](https://github.com/JayantGoel001/Travel-Forest/blob/master/screenshotsss3.png)
+![](https://github.com/JayantGoel001/Travel-Forest/blob/master/screenshots/sss3.png)
 
-![](https://github.com/JayantGoel001/Travel-Forest/blob/master/screenshotsss4.png)
+![](https://github.com/JayantGoel001/Travel-Forest/blob/master/screenshots/sss4.png)
 
-![](https://github.com/JayantGoel001/Travel-Forest/blob/master/screenshotsss5.png)
+![](https://github.com/JayantGoel001/Travel-Forest/blob/master/screenshots/sss5.png)
 
-![](https://github.com/JayantGoel001/Travel-Forest/blob/master/screenshotsss6.png)
+![](https://github.com/JayantGoel001/Travel-Forest/blob/master/screenshots/sss6.png)
 
-![](https://github.com/JayantGoel001/Travel-Forest/blob/master/screenshotsss7.png)
+![](https://github.com/JayantGoel001/Travel-Forest/blob/master/screenshots/sss7.png)
