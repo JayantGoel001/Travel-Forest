@@ -36,3 +36,27 @@ function closeForm() {
     $("#call-num").css("opacity","1");
     $("#reg").css("opacity","1");
 }
+
+(function manageTotalUsers(){
+    let totalUsers = String(getRandom(100000,200000));
+    totalUsers = addComma(totalUsers);
+    addToTotalUsers(totalUsers);
+
+    function addToTotalUsers(currentValue) {
+        let number = Number(currentValue.replace(",",""));
+        number++;
+        number = String(number);
+        number = addComma(number);
+
+        $("#total-users").html(number);
+        setTimeout(function(){
+            addToTotalUsers(number);
+        },getRandom(100,2000));
+    }
+    function getRandom(min,max) {
+        return Math.floor(Math.random()*(max-min) + min);
+    }
+    function addComma(num) {
+        return num.slice(0,3) + "," + num.slice(3,6);
+    }
+})();
