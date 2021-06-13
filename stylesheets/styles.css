@@ -109,4 +109,66 @@ p, a, button, input {
   visibility: hidden;
 }
 
+#full-site {
+  visibility: hidden;
+  overflow: hidden;
+  max-height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+#above-fold {
+  position: relative;
+  color: white;
+  padding-left: 92px;
+  padding-top: 62px;
+  box-sizing: border-box;
+  width: 94%;
+  height: 100vh;
+  display: inline-block;
+  transition: all 1s 0.5s;
+}
+#above-fold nav {
+  display: inline-block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+  padding-bottom: 1.125rem;
+  padding-right: 4.5rem;
+}
+#above-fold nav li {
+  display: inline-block;
+  padding: 0 1.875rem;
+}
+#above-fold nav li:first-child {
+  padding-left: 0;
+}
+#above-fold nav a {
+  transition: opacity 0.1s;
+}
+#above-fold nav a:hover {
+  opacity: 0.8;
+}
+#above-fold article {
+  margin-top: 12.75rem;
+}
+#above-fold article h1 {
+  font-size: 2.25rem;
+}
+#above-fold article p {
+  margin: 3rem 0;
+  width: 40rem;
+  line-height: 200%;
+}
+#above-fold article button {
+  background-color: #404040;
+  color: #E8FFF7;
+  padding: 0.8em 16em 0.8em 1.4em;
+  transition: opacity 0.2s;
+}
+#above-fold article button:hover {
+  opacity: 0.6;
+}
+
 /*# sourceMappingURL=styles.css.map */
