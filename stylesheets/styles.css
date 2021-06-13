@@ -29,7 +29,71 @@ a {
 }
 
 p, a, button, input {
-  font-size: 1.125 rem;
+  font-size: 1.125rem;
+}
+
+@keyframes intro-content {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes intro-header {
+  0% {
+    transform: translateY(40px) scale(0.6);
+  }
+  100% {
+    transform: translate(0) scale(1);
+  }
+}
+#bg {
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+}
+
+#landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  position: relative;
+  z-index: 10;
+  animation-name: intro-content;
+  animation-duration: 1.4s;
+  animation-delay: 0.1s;
+  animation-fill-mode: both;
+}
+#landing h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation-name: intro-header;
+  animation-duration: 1s;
+  animation-delay: 0.1s;
+}
+#landing p {
+  width: 36vw;
+  text-align: center;
+  line-height: 190%;
+}
+#landing button {
+  color: #425831;
+  background-color: white;
+  padding: 0.6em 4.2em;
+  border-radius: 4px;
+  margin-top: 0.875rem;
+}
+#landing button:hover {
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=styles.css.map */
