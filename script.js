@@ -6,7 +6,8 @@ function enterSite(){
     $("#above-fold").css("opacity","1");
 
     $("#full-site").css("visibility","visible");
-    $("#full-site").css("overflow","auto");
+    $("#full-site").css("overflow","visible");
     $("#full-site").css("max-height","auto");
+    $("#register-side-bar").css("transform","translate(0)")
 
 }

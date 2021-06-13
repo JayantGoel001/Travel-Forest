@@ -38,6 +38,7 @@ $bg-color : rgba(227,227,227,0.08);
     height: 100vh;
     display: inline-block;
     transition: all 1s 0.5s;
+    z-index: 12;
     nav{
         display: inline-block;
         border-bottom: 1px solid $faint-white;
@@ -81,10 +82,84 @@ $bg-color : rgba(227,227,227,0.08);
 }
 #register-side-bar{
     $side-bar-trans-time : 0.6s;
-    $side-bar-trans-delay : 1s;
+    $side-bar-trans-delay : 0.6s;
     width: $empty-width + $visible-width + $form-width;
     display: flex;
     position: absolute;
     transition: all $side-bar-trans-time $side-bar-trans-delay;
     transform: translateX(200px);
+    #empty-section{
+        width: $empty-width;
+        height: 100vh;
+    }
+    #visible-section{
+        width: $visible-width;
+        height: 100vh;
+        background-color: $bg-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        color: #B3B3B3;
+        font-size: px-to-rem(18px);
+        transition: opacity 1.4s;
+        span{
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            margin: 8vh 0;
+            transition: opacity 0.6s;
+            i{
+                font-size: px-to-rem(24px);
+                margin-bottom: px-to-rem(14px);
+            }
+        }
+        h4{
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: opacity 0.6s;
+        }
+    }
+    #form-section{
+        background-color: $bg-color;
+        height: 100vh;
+        box-sizing: border-box;
+        width: $form-width;
+        color: white;
+        padding-top: 30vh;
+        h2{
+            font-size: px-to-rem(30px);
+            margin-bottom: px-to-rem(52px);
+        }
+        input:not([type="submit"]){
+            display: block;
+            background-color: transparent;
+            border-bottom: 1px solid rgba(255,255,255,0.8);
+            margin: px-to-rem(50px) 0;
+            padding: 6px 18px;
+        }
+        input[type="submit"]{
+            background-color: white;
+            color: #292929;
+            padding: 0.4em 5.4em;
+            border-radius: 4px;
+            margin-left: 8px;
+            margin-bottom: px-to-rem(66px);
+            transition: all 0.3s;
+            &:hover{
+                opacity: 0.8;
+                transform: scale(1.1);
+            }
+        }
+        ::placeholder{
+            color: inherit;
+        }
+        a{
+            color: #B29DFF;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
 }
