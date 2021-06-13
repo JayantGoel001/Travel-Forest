@@ -67,6 +67,7 @@ p, a, button, input {
   height: 100vh;
   color: white;
   position: relative;
+  transition: all 0.4s;
   z-index: 10;
   animation-name: intro-content;
   animation-duration: 1.4s;
@@ -94,6 +95,18 @@ p, a, button, input {
 }
 #landing button:hover {
   opacity: 0.8;
+}
+
+#dimmed-bg {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(20, 20, 20, 0.86);
+  top: 0;
+  left: 0;
+  transition: all 0.6s;
+  transform: translateX(-120vw);
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=styles.css.map */

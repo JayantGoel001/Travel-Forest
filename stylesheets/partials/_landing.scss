@@ -34,6 +34,7 @@
     height: 100vh;
     color: white;
     position: relative;
+    transition: all .4s;
     z-index: 10;
     animation-name: intro-content;
     animation-duration: 1.4s;

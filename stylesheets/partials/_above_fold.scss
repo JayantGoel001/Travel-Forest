@@ -1,0 +1,19 @@
+$faint-white : rgba(255,255,255,0.38);
+
+$visible-width : 6%;
+$empty-width : 100 - $visible-width;
+
+$form-width : 70%;
+$bg-color : rgba(227,227,227,0.08);
+
+#dimmed-bg{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(20,20,20,0.86);
+    top: 0;
+    left: 0;
+    transition: all 0.6s;
+    transform: translateX(-120vw);
+    visibility: hidden;
+}
