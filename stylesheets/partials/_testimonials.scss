@@ -16,12 +16,12 @@ $bg-color : rgba(227,227,227,0.08);
         border-right: $width-size solid white;
     }
     &::before{
-        clip-path: polygon(0 100%, 100% 0,100% 100%,0% 100%);
+        clip-path: polygon(0 100%, 100% 0,100% 100%,0 100%);
         bottom: 100%;
     }
     &::after{
         top: 100%;
-        clip-path: polygon(0 100%, 100% 0,100% 0%,0% 0%);
+        clip-path: polygon(0 100%, 100% 0,100% 0,0 0);
     }
     #testimonials-bg{
         position: absolute;
@@ -37,7 +37,7 @@ $bg-color : rgba(227,227,227,0.08);
 
         position: relative;
         z-index: 20;
-        padding: px-to-rem(108px) 0 px-to-rem(72px);
+        padding: px-to-rem(108px) 0 px-to-rem(76px);
         text-align: center;
         h2{
             text-transform: uppercase;

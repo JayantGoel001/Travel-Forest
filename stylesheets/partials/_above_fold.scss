@@ -26,7 +26,6 @@ $bg-color : rgba(227,227,227,0.08);
     position: absolute;
     top: 0;
     left: 0;
-    margin: 0;
 }
 #above-fold{
     position: relative;
@@ -36,6 +35,7 @@ $bg-color : rgba(227,227,227,0.08);
     box-sizing: border-box;
     width: $empty-width;
     height: 100vh;
+    opacity: 0;
     display: inline-block;
     transition: all 1s 0.5s;
     z-index: 12;
@@ -82,7 +82,7 @@ $bg-color : rgba(227,227,227,0.08);
 }
 #register-side-bar{
     $side-bar-trans-time : 0.6s;
-    $side-bar-trans-delay : 0.6s;
+    $side-bar-trans-delay : 0.8s;
     width: $empty-width + $visible-width + $form-width;
     display: flex;
     position: absolute;
