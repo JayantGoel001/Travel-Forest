@@ -16,12 +16,12 @@ $bg-color : rgba(227,227,227,0.08);
         border-right: $width-size solid white;
     }
     &::before{
-        clip-path: polygon(0% 100%, 100% 0%,100% 100%,0 100%);
+        clip-path: polygon(0 100%, 100% 0,100% 100%,0% 100%);
         bottom: 100%;
     }
     &::after{
         top: 100%;
-        clip-path: polygon(0% 100%, 100% 0%,100% 0%,0% 0%);
+        clip-path: polygon(0 100%, 100% 0,100% 0%,0% 0%);
     }
     #testimonials-bg{
         position: absolute;
@@ -31,4 +31,99 @@ $bg-color : rgba(227,227,227,0.08);
         right: 0;
         background-color: white;
     }
+    article{
+        $color : #0D77BB;
+        $alt-color : #184A6A;
+
+        position: relative;
+        z-index: 20;
+        padding: px-to-rem(108px) 0 px-to-rem(72px);
+        text-align: center;
+        h2{
+            text-transform: uppercase;
+            font-size: px-to-rem(36px);
+            margin-bottom: px-to-rem(24px);
+        }
+        h5{
+            font-size: px-to-rem(24px);
+            span{
+                font-size: px-to-rem(36px);
+                color: $color;
+            }
+        }
+        #reviews{
+            display: flex;
+            color: white;
+            margin: px-to-rem(32px) px-to-rem(24px);
+            .review{
+                background-color: $color;
+                margin: 0 px-to-rem(18px);
+                padding: px-to-rem(24px);
+                .reviewer-details{
+                    display: flex;
+                    align-items: center;
+                    figure{
+                        border-radius: 50%;
+                        background-size: cover;
+                        height: px-to-rem(100px);
+                        width: px-to-rem(100px);
+                    }
+                    .details{
+                        margin-left: px-to-rem(18px);
+                        letter-spacing: 1px;
+                        .name{
+                            font-size: px-to-rem(18px);
+                            text-transform: uppercase;
+                            margin-bottom: px-to-rem(6px);
+                        }
+                        .from{
+                            text-align: left;
+                            font-size: px-to-rem(14px);
+                        }
+                    }
+                }
+                .review-text{
+                    font-size: px-to-rem(16px);
+                    margin-top: px-to-rem(14px);
+                    text-align: left;
+                    line-height: 240%;
+                }
+                @for $i from 1 through 3{
+                    &:nth-child(#{$i}){
+                        figure{
+                            background-image: url(get-image("face-#{$i}.jpg"));
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    background-color: $alt-color;
+                }
+            }
+        }
+        a{
+            display: block;
+            text-align: center;
+            color: $color;
+            margin-top: px-to-rem(8px);
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

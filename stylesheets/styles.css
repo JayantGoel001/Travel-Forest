@@ -387,12 +387,12 @@ p, a, button, input {
   border-right: 70vw solid white;
 }
 #testimonials::before {
-  clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0 100%);
+  clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
   bottom: 100%;
 }
 #testimonials::after {
   top: 100%;
-  clip-path: polygon(0% 100%, 100% 0%, 100% 0%, 0% 0%);
+  clip-path: polygon(0 100%, 100% 0, 100% 0%, 0% 0%);
 }
 #testimonials #testimonials-bg {
   position: absolute;
@@ -401,6 +401,84 @@ p, a, button, input {
   bottom: 0;
   right: 0;
   background-color: white;
+}
+#testimonials article {
+  position: relative;
+  z-index: 20;
+  padding: 6.75rem 0 4.5rem;
+  text-align: center;
+}
+#testimonials article h2 {
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+#testimonials article h5 {
+  font-size: 1.5rem;
+}
+#testimonials article h5 span {
+  font-size: 2.25rem;
+  color: #0D77BB;
+}
+#testimonials article #reviews {
+  display: flex;
+  color: white;
+  margin: 2rem 1.5rem;
+}
+#testimonials article #reviews .review {
+  background-color: #0D77BB;
+  margin: 0 1.125rem;
+  padding: 1.5rem;
+}
+#testimonials article #reviews .review .reviewer-details {
+  display: flex;
+  align-items: center;
+}
+#testimonials article #reviews .review .reviewer-details figure {
+  border-radius: 50%;
+  background-size: cover;
+  height: 6.25rem;
+  width: 6.25rem;
+}
+#testimonials article #reviews .review .reviewer-details .details {
+  margin-left: 1.125rem;
+  letter-spacing: 1px;
+}
+#testimonials article #reviews .review .reviewer-details .details .name {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  margin-bottom: 0.375rem;
+}
+#testimonials article #reviews .review .reviewer-details .details .from {
+  text-align: left;
+  font-size: 0.875rem;
+}
+#testimonials article #reviews .review .review-text {
+  font-size: 1rem;
+  margin-top: 0.875rem;
+  text-align: left;
+  line-height: 240%;
+}
+#testimonials article #reviews .review:nth-child(1) figure {
+  background-image: url("../images/face-1.jpg");
+}
+#testimonials article #reviews .review:nth-child(2) figure {
+  background-image: url("../images/face-2.jpg");
+}
+#testimonials article #reviews .review:nth-child(3) figure {
+  background-image: url("../images/face-3.jpg");
+}
+#testimonials article #reviews .review:nth-child(2) {
+  background-color: #184A6A;
+}
+#testimonials article a {
+  display: block;
+  text-align: center;
+  color: #0D77BB;
+  margin-top: 0.5rem;
+}
+#testimonials article a:hover {
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=styles.css.map */
