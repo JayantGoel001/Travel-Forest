@@ -1,0 +1,34 @@
+@import "functions";
+$bg-color : rgba(227,227,227,0.08);
+#testimonials{
+    $width-size : 70vw;
+    background-color: $bg-color;
+    margin: px-to-rem(200px) 0;
+    position: relative;
+
+    &::before, &::after{
+        content: "";
+        height: 12vh;
+        background-color: $bg-color;
+        position: absolute;
+        width: 100%;
+        box-sizing: border-box;
+        border-right: $width-size solid white;
+    }
+    &::before{
+        clip-path: polygon(0% 100%, 100% 0%,100% 100%,0 100%);
+        bottom: 100%;
+    }
+    &::after{
+        top: 100%;
+        clip-path: polygon(0% 100%, 100% 0%,100% 0%,0% 0%);
+    }
+    #testimonials-bg{
+        position: absolute;
+        width: $width-size;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+    }
+}

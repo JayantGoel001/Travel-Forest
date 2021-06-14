@@ -372,4 +372,35 @@ p, a, button, input {
   cursor: pointer;
 }
 
+#testimonials {
+  background-color: rgba(227, 227, 227, 0.08);
+  margin: 12.5rem 0;
+  position: relative;
+}
+#testimonials::before, #testimonials::after {
+  content: "";
+  height: 12vh;
+  background-color: rgba(227, 227, 227, 0.08);
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  border-right: 70vw solid white;
+}
+#testimonials::before {
+  clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0 100%);
+  bottom: 100%;
+}
+#testimonials::after {
+  top: 100%;
+  clip-path: polygon(0% 100%, 100% 0%, 100% 0%, 0% 0%);
+}
+#testimonials #testimonials-bg {
+  position: absolute;
+  width: 70vw;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+}
+
 /*# sourceMappingURL=styles.css.map */
