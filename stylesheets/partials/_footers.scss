@@ -1,0 +1,36 @@
+@import "functions";
+$faint-white : rgba(255,255,255,0.38);
+#footer{
+    color: white;
+    padding: px-to-rem(40px) 0;
+    background-color: rgba(13,13,13,0.48);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h5{
+        font-size: px-to-rem(30px);
+        margin: px-to-rem(30px) 0;
+    }
+    hr{
+        width: 4%;
+        border: 1px solid $faint-white;
+        border-top: none;
+    }
+    h6{
+        font-size: px-to-rem(16px);
+        margin: px-to-rem(8px) 0;
+    }
+    #social-icons{
+        padding: px-to-rem(12px) 0;
+        img{
+            width: px-to-rem(36px);
+            padding: 0 px-to-rem(4px);
+            transition: all 0.2s;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}
